@@ -81,7 +81,7 @@ def sphinxify(docstring, format='html'):
     confdir = os.path.join(SAGE_DOC_SRC, 'en', 'introspect')
 
     doctreedir = os.path.join(srcdir, 'doctrees')
-    confoverrides = {'html_context': {}, 'master_doc': 'docstring'}
+    confoverrides = {'html_context': {}, 'main_doc': 'docstring'}
 
     import sys
     old_sys_path = list(sys.path)  # Sphinx modifies sys.path
